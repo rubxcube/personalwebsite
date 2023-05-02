@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/059466ea62.js" crossorigin="anonymous"></script>
+
+        <title> Personal Portfolio: Ruben Badalyan </title>
+    </head>
+    <body>
+        <!-- Home Section/Header -->
+        <header id="home">
+            <div class="container">
+                <nav>
+                    <img src="images/new-logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#lsf"> Life so far </a></li>
+                        <li><a href="#works"> My works </a></li>
+                        <li><a href="#contacts"> Contacts </a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1> Hi, I'm </h1>
+                    <span class="auto-type"></span>
+                    <p> Welcome to my world (v1.0)</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Life so far Section  -->
+        <section id="lsf">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/life-so-far.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> Life so far </h1>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('hs')"> High School </p>
+                            <p class="tab-links" onclick="opentab('army')"> Army </p>
+                            <p class="tab-links" onclick="opentab('uni')"> University </p>
+                            <p class="tab-links" onclick="opentab('now')"> Now </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="hs">
+                            <p> I won't exaggerate by saying that the time spent in my high school 
+                                (<a href="https://aybschool.am/en/" target="_blank">Ayb High School</a>) was by far the best and most  
+                                memorable period of my life.<br><br>
+                                Ayb gave me the opportunity to rediscover old hobbies, find new ones, 
+                                and get used to stepping out of my comfort zone.<br><br>
+                                <b>Fun Fact:</b> I was a finalist of the first season of the tv show <span>The Brainiest</span> 
+                                (Armenian adaptation of the widely known British TV quiz show Britain's Brainiest Kid)
+                        </div>
+                        <div class="tab-contents" id="army">
+                            <p> Army service in Armenia is mandatory, and it lasts for two years.
+                                Army days have been the most life-changing and challenging period of my life. <br><br>
+                                Since I had completed my secondary education and was already a university student,
+                                I had the chance to get recruited to a military training base before moving to my main one.<br><br>
+                                After receiving training in anti-aircraft warfare, I continued the rest of my service in the main base. 
+                                Various events and experiences (including the 
+                                <a href="https://en.wikipedia.org/wiki/Second_Nagorno-Karabakh_War" target="_blank">Second Nagorno-Karabagh War</a>)
+                                led to a personal paradigm shift in worldview, work ethic and values.
+
+                            </p>
+                        </div>
+                        <div class="tab-contents" id="uni">
+                            <p> As I've mentioned, before starting my army service, I actually got accepted to the
+                                <a href="https://aua.am/" target="_blank">American University of Armenia</a> 
+                                (accredited by the WASC Senior College and University Commission)
+                                and completed my freshman year as a BA in Business student. 
+                                After returning from the army, I continued with my sophomore year.<br><br>
+
+                                <b>Another Fun Fact:</b> During the <a href="https://www.starmus.com/festival/6" target="_blank">6th Starmus Festival</a> in Armenia -
+                                I met the Canadian astronaut and musician Chris Hadfield.
+                            </p>
+                        </div>
+                        <div class="tab-contents" id="now">
+                            <p> As satisfied as I was with my education, I decided to take a gap year to focus entirely on myself, 
+                                learn new things, and develop as an invidual.<br><br>
+                                My love for AI (combined with my knowledge of finance gained in AUA) led me to study programming 
+                                and dive deeper into data science and machine learning in finance and investments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Works Section -->
+        <section id="works">
+            <div class="container">
+                <h1 class="sub-title"> My works/hobbies </h1>
+                <div class="works-list">
+                    <div>
+                        <span><i class="fa-solid fa-brain"></i></span>
+                        <span id="work-title"> Projects </span>
+                        <p> Visit my accounts to view the projects I've completed, as well as projects that are in the process. </p>
+                        <a href="https://linktr.ee/rubxcube__" target="_blank"> Learn More </a>
+                    </div>
+                    <div>
+                        <span><i class="fa-sharp fa-solid fa-puzzle-piece"></i></span>
+                        <span id="work-title"> Hobbies </span>
+                        <p> You can also take a closer look at all my creative endeavors, both past and ongoing. </p>
+                        <a href="https://linktr.ee/rubxcube__" target="_blank"> Learn More </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section + footer  -->
+        <section id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact me </h1>
+                        <p><i class="fa-solid fa-envelope"></i> rubenbadalyan01@gmail.com </p>
+                        <p><i class="fa-solid fa-phone"></i> +(374) 33 77-30-11 </p>
+                        <a href="images/my-cv.pdf" download class="btn"> Download CV </a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2"> Submit </button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>With great power comes great responsibility</p>
+                <p>Copyright © Ruben Badalyan, 2023</p>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Ruben", "an autodidact", "a geek", "Batman"],
+                typeSpeed: 135,
+                backSpeed: 135,
+                backDelay: 110,
+                loop: true
+            })
+        </script>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+
+            function opentab(tabname){
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add('active-tab')
+            }
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyTqtYJ6tPN9W5YPFMKkr2UfmjfSzzjfNmxDNfAb_mxo9XbkoNQvl78rh6ns4bcE1888Q/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
